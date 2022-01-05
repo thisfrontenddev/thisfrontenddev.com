@@ -1,0 +1,38 @@
+module.exports = {
+  content: ["./app/**/*.{ts,tsx}"],
+  theme: {
+    colors: {
+      black: "hsl(0, 0%, 4%)",
+      white: "hsl(0, 0%, 100%)",
+      coal: "hsl(0, 0%, 8%)",
+      onyx: "hsl(240, 51%, 11%)",
+      turbo100: "hsl(54, 87%, 55%)",
+      turbo80: "hsl(54, 88%, 64%)",
+      turbo60: "hsl(54, 90%, 70%)",
+      turbo40: "hsl(54, 90%, 80%)",
+      turbo20: "hsl(54, 89%, 89%)",
+      neonblue100: "hsl(234, 90%, 60%)",
+      neonblue80: "hsl(234, 83%, 63%)",
+      neonblue60: "hsl(234, 90%, 72%)",
+      neonblue40: "hsl(234, 90%, 81%)",
+      neonblue20: "hsl(233, 91%, 91%)",
+      cloudy: "hsl(210, 20%, 96%)",
+      brush: "hsl(240, 8%, 91%)",
+      slate: "hsl(198, 25%, 76%)",
+    },
+    fontFamily: {
+      display: [
+        "Inter",
+        "Helvetica Neue",
+        "ui-sans-serif",
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+      ],
+      retro: ['"Press Start 2P"'],
+    },
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+};
