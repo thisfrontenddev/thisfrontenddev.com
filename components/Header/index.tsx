@@ -28,7 +28,7 @@ const Header = ({ className, ...rest }: Props) => {
       <nav className="relative flex w-full max-w-2xl mx-auto pt-8 pb-8">
         <div className="">
           <button
-            className="transition-opacity duration-300 relative visible md:hidden w-10 h-10 text-carbon-50"
+            className="-mx-3 relative visible md:hidden transition-opacity duration-300 w-10 h-10"
             aria-label="Toggle menu"
             type="button"
             onClick={toggleMenu}
@@ -41,6 +41,7 @@ const Header = ({ className, ...rest }: Props) => {
                 { "scale-100": !isMenuOpen },
                 { "scale-0": isMenuOpen }
               )}
+              aria-hidden={isMenuOpen}
             />
             <CloseIcon
               className={clsx(
@@ -50,6 +51,7 @@ const Header = ({ className, ...rest }: Props) => {
                 { "scale-100": isMenuOpen },
                 { "scale-0": !isMenuOpen }
               )}
+              aria-hidden={!isMenuOpen}
             />
           </button>
           {isMenuOpen && <MobileMenu />}

@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`text-carbon-900 dark:text-carbon:50 bg-carbon ${inter.variable}`}
+      className={`text-carbon-900 dark:text-carbon-50 bg-white dark:bg-carbon ${inter.variable}`}
     >
       <head></head>
       <body className="px-8 subpixel-antialiased">
