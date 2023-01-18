@@ -3,10 +3,7 @@ import Link, { LinkProps } from "next/link";
 
 type Props = { text: string } & LinkProps & React.HTMLAttributes<HTMLElement>;
 const NavLink = (props: Props) => {
-  const className = clsx(
-    props.className,
-    "hidden md:inline-block p-1 text-carbon-200"
-  );
+  const className = clsx(props.className, "hidden md:inline-block p-1");
   return (
     <Link href={props.href} className={className}>
       {props.text}

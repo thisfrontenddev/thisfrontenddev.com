@@ -57,6 +57,7 @@ const Header = ({ className, ...rest }: Props) => {
           {isMenuOpen && <MobileMenu />}
         </div>
         <NavLink href="/" text="Home" />
+        <NavLink href="/posts" text="Posts" />
       </nav>
     </header>
   );
