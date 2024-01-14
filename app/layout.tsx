@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import inter from "@/fonts/Inter";
+import { inter } from "@/fonts";
 import "../styles/globals.css";
 
 export default function RootLayout({
