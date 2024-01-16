@@ -1,27 +1,27 @@
-"use client";
-import useToggle from "@/hooks/useToggle";
-import clsx from "clsx";
-import MobileMenu from "../MobileMenu";
-import CloseIcon from "@/components/Icons/Close";
-import MenuIcon from "@/components/Icons/Menu";
-import NavLink from "./NavLink";
-import { useEffect } from "react";
-type Props = {} & React.HTMLAttributes<HTMLElement>;
+"use client"
+import CloseIcon from "@/components/Icons/Close"
+import MenuIcon from "@/components/Icons/Menu"
+import useToggle from "@/hooks/useToggle"
+import clsx from "clsx"
+import { useEffect } from "react"
+import MobileMenu from "../MobileMenu"
+import NavLink from "./NavLink"
+type Props = {} & React.HTMLAttributes<HTMLElement>
 
 const Header = ({ className, ...rest }: Props) => {
-  const [isMenuOpen, toggleMenu] = useToggle();
+  const [isMenuOpen, toggleMenu] = useToggle()
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.add("overflow-hidden")
     } else {
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("overflow-hidden")
     }
 
     return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  });
+      document.body.classList.remove("overflow-hidden")
+    }
+  })
 
   return (
     <header {...rest} className={clsx(className, "flex flex-col")}>
@@ -57,10 +57,10 @@ const Header = ({ className, ...rest }: Props) => {
           {isMenuOpen && <MobileMenu />}
         </div>
         <NavLink href="/" text="Home" />
-        <NavLink href="/posts" text="Posts" />
+        <NavLink href="/blog" text="Blog" />
       </nav>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
