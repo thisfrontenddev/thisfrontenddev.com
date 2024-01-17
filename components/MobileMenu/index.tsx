@@ -1,7 +1,7 @@
-import { animate, stagger } from "motion";
-import Link from "next/link";
-import { useEffect } from "react";
-type Props = React.HTMLAttributes<HTMLElement>;
+import { animate, stagger } from "motion"
+import Link from "next/link"
+import { useEffect } from "react"
+type Props = React.HTMLAttributes<HTMLElement>
 
 const MobileMenu = ({ className, ...rest }: Props) => {
   useEffect(() => {
@@ -9,14 +9,14 @@ const MobileMenu = ({ className, ...rest }: Props) => {
       "a",
       { opacity: 1, width: "100%" },
       { duration: 0.3, delay: stagger(0.01, { from: "last" }) }
-    );
-  }, []);
+    )
+  }, [])
 
   const menuItemClassnames =
-    "inline-block border-b border-carbon-50 dark:border-carbon-600 hover:border-yellow-300 py-4 opacity-1 transform w-0";
+    "inline-block border-b border-zinc-50 dark:border-zinc-600 hover:border-yellow-300 py-4 opacity-1 transform w-0"
 
   return (
-    <ul className="absolute flex flex-col w-full h-screen list-none z-50 text-sm font-bold bg-white dark:bg-carbon">
+    <ul className="absolute flex flex-col w-full h-screen list-none z-50 text-sm font-bold bg-white dark:bg-zinc">
       <li>
         <Link className={menuItemClassnames} href="/">
           Home
@@ -28,7 +28,7 @@ const MobileMenu = ({ className, ...rest }: Props) => {
         </Link>
       </li>
     </ul>
-  );
-};
+  )
+}
 
-export default MobileMenu;
+export default MobileMenu

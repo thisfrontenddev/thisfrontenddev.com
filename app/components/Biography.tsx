@@ -1,7 +1,7 @@
-import Image from "next/image";
-import profilePic from "@/public/avatar.jpeg";
+import profilePic from "@/public/avatar.jpeg"
+import Image from "next/image"
 
-type Props = {};
+type Props = {}
 
 const Biography = (props: Props) => {
   return (
@@ -10,10 +10,10 @@ const Biography = (props: Props) => {
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight">
           Eric Martin
         </h1>
-        <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+        <h2 className="text-zinc-700 dark:text-zinc-200 mb-4">
           Senior Frontend Developer
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-16">
+        <p className="text-zinc-600 dark:text-zinc-400 mb-16">
           Building websites for the past decade. I also like consulting and
           teaching about React and Next.js.
         </p>
@@ -29,7 +29,7 @@ const Biography = (props: Props) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Biography;
+export default Biography
