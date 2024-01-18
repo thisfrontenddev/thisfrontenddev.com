@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
-import { inter } from "@/fonts"
+import { fontSans } from "@/fonts"
+import { cn } from "@/lib/utils"
 import "../styles/globals.css"
 
 export default function RootLayout({
@@ -10,7 +11,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-950 ${inter.variable}`}
+      className={cn(
+        "min-h-screen bg-background font-sans antialiased",
+        fontSans.variable
+      )}
     >
       <head></head>
       <body className="px-8 subpixel-antialiased">

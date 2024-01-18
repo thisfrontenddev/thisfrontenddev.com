@@ -9,18 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-navigation-menu": "^1.1.4",
     "@tryghost/content-api": "^1.11.20",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.10",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "lucide-react": "^0.312.0",
     "motion": "^10.17.0",
     "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
   },
   "devDependencies": {
