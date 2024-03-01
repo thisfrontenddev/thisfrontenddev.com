@@ -27,7 +27,7 @@ export default async function BlogPage() {
           <Link
             key={post.id}
             href={`/blog/${post.slug}`}
-            className="inline-block rounded-md w-full px-4 py-6 hover:bg-zinc-100 dark:hover:bg-zinc-900"
+            className="inline-block rounded-md w-full px-4 py-6 hover:bg-zinc-900"
           >
             <article>
               <div className="flex items-center">
