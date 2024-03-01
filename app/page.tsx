@@ -1,5 +1,9 @@
-import Biography from "./components/Biography";
+import Scene from "@/app/components/Scene"
 
 export default function Page() {
-  return <Biography />;
+  return (
+    <>
+      <Scene />
+    </>
+  )
 }

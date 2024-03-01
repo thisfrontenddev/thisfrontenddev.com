@@ -19,7 +19,7 @@ export default function RootLayout({
       <head></head>
       <body className="px-8 subpixel-antialiased">
         <Header />
-        <main className="w-full max-w-2xl mx-auto">{children}</main>
+        <main className="w-full mx-auto">{children}</main>
       </body>
     </html>
   )
